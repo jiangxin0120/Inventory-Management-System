@@ -1,0 +1,8 @@
+C:\Users\timez\OneDrive\桌面\COMP306Group Project\InventoryManagementAPI\obj\Debug\net8.0\InventoryManagementAPI.csproj.AssemblyReference.cache
+C:\Users\timez\OneDrive\桌面\COMP306Group Project\InventoryManagementAPI\obj\Debug\net8.0\InventoryManagementAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\timez\OneDrive\桌面\COMP306Group Project\InventoryManagementAPI\obj\Debug\net8.0\InventoryManagementAPI.AssemblyInfoInputs.cache
+C:\Users\timez\OneDrive\桌面\COMP306Group Project\InventoryManagementAPI\obj\Debug\net8.0\InventoryManagementAPI.AssemblyInfo.cs
+C:\Users\timez\OneDrive\桌面\COMP306Group Project\InventoryManagementAPI\obj\Debug\net8.0\InventoryManagementAPI.csproj.CoreCompileInputs.cache
+C:\Users\timez\OneDrive\桌面\COMP306Group Project\InventoryManagementAPI\obj\Debug\net8.0\InventoryManagementAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\timez\OneDrive\桌面\COMP306Group Project\InventoryManagementAPI\obj\Debug\net8.0\InventoryManagementAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\timez\OneDrive\桌面\COMP306Group Project\InventoryManagementAPI\obj\Debug\net8.0\InventoryManagementAPI.sourcelink.json
