@@ -28,18 +28,4 @@ This is an Inventory Management API built with ASP.NET Core, DynamoDB, and AutoM
 
 ---
 
-## Setup Instructions
 
-### Prerequisites
-
-- **.NET SDK 6.0** or higher
-- **AWS Account** with DynamoDB configured
-- **AWS CLI** configured on your local machine (optional but recommended for testing DynamoDB)
-- **Postman** or any HTTP client to test the API (or Swagger UI for testing directly in the browser)
-
-### Installation Steps
-
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/inventory-management-api.git
-   cd inventory-management-api
