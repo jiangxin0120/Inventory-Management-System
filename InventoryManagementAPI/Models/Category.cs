@@ -1,11 +1,19 @@
-﻿namespace InventoryManagementAPI.Models
+﻿using Amazon.DynamoDBv2.DataModel;
+
+namespace InventoryManagementAPI.Models
 {
+    [DynamoDBTable("Categories")]
     public class Category
     {
-        public int CategoryID { get; set; }
-        public string CategoryName { get; set; }
-        public string Description { get; set; }
-        public ICollection<Product> Products { get; set; }
-    }
+        [DynamoDBHashKey] // Partition Key
+        public string CategoryID { get; set; } 
 
+        [DynamoDBProperty]
+        public string CategoryName { get; set; }
+
+        [DynamoDBProperty]
+        public string Description { get; set; }
+
+
+    }
 }

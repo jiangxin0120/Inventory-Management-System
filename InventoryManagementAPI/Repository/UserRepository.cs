@@ -1,57 +1,50 @@
-﻿using InventoryManagementAPI.Data;
+﻿using Amazon.DynamoDBv2.DataModel;
 using InventoryManagementAPI.Models;
-using Microsoft.AspNetCore.JsonPatch;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagementAPI.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private readonly InventoryDbContext _context;
+        private readonly IDynamoDBContext _context;
 
-        public UserRepository(InventoryDbContext context)
+        public UserRepository(IDynamoDBContext context)
         {
             _context = context;
         }
 
-        public async Task<IEnumerable<User>> GetAllUsersAsync() =>
-            await _context.Users.ToListAsync();
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
+        {
+            return await _context.ScanAsync<User>(new List<ScanCondition>()).GetRemainingAsync();
+        }
 
-        public async Task<User> GetUserByIdAsync(int id) =>
-            await _context.Users.FindAsync(id);
+        public async Task<User> GetUserByIdAsync(string id)
+        {
+            return await _context.LoadAsync<User>(id);
+        }
 
         public async Task AddUserAsync(User user)
         {
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
+            await _context.SaveAsync(user);
         }
 
         public async Task UpdateUserAsync(User user)
         {
-            _context.Entry(user).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            await _context.SaveAsync(user);
         }
 
-        public async Task UpdateUserPartialAsync(int id, JsonPatchDocument<User> patchDoc)
+        public async Task UpdateUserPartialAsync(string id, Action<User> updateAction)
         {
-            var user = await _context.Users.FindAsync(id);
+            var user = await _context.LoadAsync<User>(id);
             if (user != null)
             {
-                patchDoc.ApplyTo(user);
-                await _context.SaveChangesAsync();
+                updateAction(user);
+                await _context.SaveAsync(user);
             }
         }
 
-        public async Task DeleteUserAsync(int id)
+        public async Task DeleteUserAsync(string id)
         {
-            var user = await _context.Users.FindAsync(id);
-            if (user != null)
-            {
-                _context.Users.Remove(user);
-                await _context.SaveChangesAsync();
-            }
+            await _context.DeleteAsync<User>(id);
         }
     }
-
 }

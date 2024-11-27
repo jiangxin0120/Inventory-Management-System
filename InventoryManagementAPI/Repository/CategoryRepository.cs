@@ -1,56 +1,58 @@
-﻿using InventoryManagementAPI.Data;
+﻿using Amazon.DynamoDBv2.DataModel;
+using Amazon.DynamoDBv2.DocumentModel;
 using InventoryManagementAPI.Models;
-using Microsoft.AspNetCore.JsonPatch;
-using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagementAPI.Repository
 {
     public class CategoryRepository : ICategoryRepository
     {
-        private readonly InventoryDbContext _context;
+        private readonly IDynamoDBContext _context;
 
-        public CategoryRepository(InventoryDbContext context)
+        public CategoryRepository(IDynamoDBContext context)
         {
             _context = context;
         }
 
-        public async Task<IEnumerable<Category>> GetAllCategoriesAsync() =>
-            await _context.Categories.ToListAsync();
+        // Retrieve all categories
+        public async Task<IEnumerable<Category>> GetAllCategoriesAsync()
+        {
+            var conditions = new List<ScanCondition>();
+            return await _context.ScanAsync<Category>(conditions).GetRemainingAsync();
+        }
 
-        public async Task<Category> GetCategoryByIdAsync(int id) =>
-            await _context.Categories.FindAsync(id);
+        // Retrieve a single category by ID
+        public async Task<Category> GetCategoryByIdAsync(string id)
+        {
+            return await _context.LoadAsync<Category>(id);
+        }
 
+        // Add a new category
         public async Task AddCategoryAsync(Category category)
         {
-            _context.Categories.Add(category);
-            await _context.SaveChangesAsync();
+            await _context.SaveAsync(category);
         }
 
+        // Update an existing category
         public async Task UpdateCategoryAsync(Category category)
         {
-            _context.Entry(category).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            await _context.SaveAsync(category);
         }
 
-        public async Task UpdateCategoryPartialAsync(int id, JsonPatchDocument<Category> patchDoc)
+        // Partial update (simulate JsonPatchDocument functionality)
+        public async Task UpdateCategoryPartialAsync(string id, Action<Category> updateAction)
         {
-            var category = await _context.Categories.FindAsync(id);
+            var category = await _context.LoadAsync<Category>(id);
             if (category != null)
             {
-                patchDoc.ApplyTo(category);
-                await _context.SaveChangesAsync();
+                updateAction(category); // Apply updates
+                await _context.SaveAsync(category); // Save changes
             }
         }
 
-        public async Task DeleteCategoryAsync(int id)
+        // Delete a category
+        public async Task DeleteCategoryAsync(string id)
         {
-            var category = await _context.Categories.FindAsync(id);
-            if (category != null)
-            {
-                _context.Categories.Remove(category);
-                await _context.SaveChangesAsync();
-            }
+            await _context.DeleteAsync<Category>(id);
         }
     }
-
 }

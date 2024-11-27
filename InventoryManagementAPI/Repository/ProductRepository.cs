@@ -1,55 +1,50 @@
-﻿using InventoryManagementAPI.Data;
+﻿using Amazon.DynamoDBv2.DataModel;
 using InventoryManagementAPI.Models;
-using Microsoft.AspNetCore.JsonPatch;
-using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagementAPI.Repository
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly InventoryDbContext _context;
+        private readonly IDynamoDBContext _context;
 
-        public ProductRepository(InventoryDbContext context)
+        public ProductRepository(IDynamoDBContext context)
         {
             _context = context;
         }
 
-        public async Task<IEnumerable<Product>> GetAllProductsAsync() =>
-            await _context.Products.ToListAsync();
+        public async Task<IEnumerable<Product>> GetAllProductsAsync()
+        {
+            return await _context.ScanAsync<Product>(new List<ScanCondition>()).GetRemainingAsync();
+        }
 
-        public async Task<Product> GetProductByIdAsync(int id) =>
-            await _context.Products.FindAsync(id);
+        public async Task<Product> GetProductByIdAsync(string id)
+        {
+            return await _context.LoadAsync<Product>(id);
+        }
 
         public async Task AddProductAsync(Product product)
         {
-            _context.Products.Add(product);
-            await _context.SaveChangesAsync();
+            await _context.SaveAsync(product);
         }
 
         public async Task UpdateProductAsync(Product product)
         {
-            _context.Entry(product).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            await _context.SaveAsync(product);
         }
 
-        public async Task UpdateProductPartialAsync(int id, JsonPatchDocument<Product> patchDoc)
+        public async Task UpdateProductPartialAsync(string id, Action<Product> updateAction)
         {
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.LoadAsync<Product>(id);
             if (product != null)
             {
-                patchDoc.ApplyTo(product);
-                await _context.SaveChangesAsync();
+                updateAction(product);
+                await _context.SaveAsync(product);
             }
         }
 
-        public async Task DeleteProductAsync(int id)
+        public async Task DeleteProductAsync(string id)
         {
-            var product = await _context.Products.FindAsync(id);
-            if (product != null)
-            {
-                _context.Products.Remove(product);
-                await _context.SaveChangesAsync();
-            }
+            await _context.DeleteAsync<Product>(id);
         }
     }
 }

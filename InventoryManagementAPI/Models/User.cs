@@ -1,23 +1,20 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Amazon.DynamoDBv2.DataModel;
 
 namespace InventoryManagementAPI.Models
 {
+    [DynamoDBTable("Users")]
     public class User
     {
-        [Key]
-        public int UserId { get; set; }
+        [DynamoDBHashKey]
+        public string UserId { get; set; } // Partition Key
 
-        [Required]
-        [StringLength(50)]
+        [DynamoDBProperty]
         public string Username { get; set; }
 
-        [Required]
-        [EmailAddress]
+        [DynamoDBProperty]
         public string Email { get; set; }
 
-        [Required]
-        [StringLength(100)]
+        [DynamoDBProperty]
         public string Password { get; set; }
     }
-
 }

@@ -1,15 +1,24 @@
-﻿namespace InventoryManagementAPI.Models
+﻿using Amazon.DynamoDBv2.DataModel;
+
+namespace InventoryManagementAPI.Models
 {
+    [DynamoDBTable("Products")]
     public class Product
     {
-        public int ProductID { get; set; }
-        public string ProductName { get; set; }
-        public string Description { get; set; }
-        public decimal UnitPrice { get; set; }
-        public int StockLevel { get; set; }
-        public int ReorderLevel { get; set; }
-        public int CategoryID { get; set; }
-        public Category Category { get; set; }
+        [DynamoDBHashKey]
+        public string ProductId { get; set; } // Partition Key
+
+        [DynamoDBProperty]
+        public string Name { get; set; }
+
+        [DynamoDBProperty]
+        public string CategoryId { get; set; }
+
+        [DynamoDBProperty]
+        public int QuantityInStock { get; set; }
+
+        [DynamoDBProperty]
+        public decimal Price { get; set; }
     }
 
 }

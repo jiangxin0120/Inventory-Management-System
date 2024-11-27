@@ -20,7 +20,6 @@ namespace InventoryManagementAPI.Controllers
             _mapper = mapper;
         }
 
-        // GET: api/Users
         [HttpGet]
         public async Task<ActionResult<IEnumerable<UserReadDTO>>> GetAllUsers()
         {
@@ -28,51 +27,76 @@ namespace InventoryManagementAPI.Controllers
             return Ok(_mapper.Map<IEnumerable<UserReadDTO>>(users));
         }
 
-        // GET: api/Users/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<UserReadDTO>> GetUserById(int id)
+        public async Task<ActionResult<UserReadDTO>> GetUserById(string id)
         {
             var user = await _repository.GetUserByIdAsync(id);
             if (user == null) return NotFound();
             return Ok(_mapper.Map<UserReadDTO>(user));
         }
 
-        // POST: api/Users
         [HttpPost]
         public async Task<ActionResult<UserReadDTO>> CreateUser(UserCreateDTO userDto)
         {
             var user = _mapper.Map<User>(userDto);
+            user.UserId = Guid.NewGuid().ToString(); // Generate a unique ID
             await _repository.AddUserAsync(user);
             var userReadDto = _mapper.Map<UserReadDTO>(user);
             return CreatedAtAction(nameof(GetUserById), new { id = user.UserId }, userReadDto);
         }
 
-        // PUT: api/Users/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, UserUpdateDTO userDto)
+        public async Task<IActionResult> UpdateUser(string id, UserUpdateDTO userDto)
         {
             var user = _mapper.Map<User>(userDto);
             user.UserId = id;
-
             await _repository.UpdateUserAsync(user);
             return NoContent();
         }
 
-        // PATCH: api/Users/{id}
         [HttpPatch("{id}")]
-        public async Task<IActionResult> UpdateUserPartial(int id, [FromBody] JsonPatchDocument<User> patchDoc)
+        public async Task<IActionResult> UpdateUserPartial(string id, [FromBody] JsonPatchDocument<User> patchDoc)
         {
-            await _repository.UpdateUserPartialAsync(id, patchDoc);
+            if (patchDoc == null)
+            {
+                return BadRequest("Invalid JSON Patch document.");
+            }
+
+            // Retrieve the user by ID
+            var user = await _repository.GetUserByIdAsync(id);
+            if (user == null)
+            {
+                return NotFound($"User with ID {id} not found.");
+            }
+
+            // Apply the patch document to the user object
+            patchDoc.ApplyTo(user, (error) =>
+            {
+                // This lambda function handles validation errors
+                ModelState.AddModelError(error.AffectedObject?.ToString() ?? "Unknown", error.ErrorMessage);
+            });
+
+            // Check if the ModelState is valid after applying the patch
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // Save changes to the repository
+            await _repository.UpdateUserAsync(user);
             return NoContent();
         }
 
-        // DELETE: api/Users/{id}
+
+
+
+
+
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(int id)
+        public async Task<IActionResult> DeleteUser(string id)
         {
             await _repository.DeleteUserAsync(id);
             return NoContent();
         }
     }
-
 }

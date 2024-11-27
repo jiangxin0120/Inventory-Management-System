@@ -1,11 +1,9 @@
 ﻿using AutoMapper;
-using InventoryManagementAPI.Data;
 using InventoryManagementAPI.DTOs;
 using InventoryManagementAPI.Models;
 using InventoryManagementAPI.Repository;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagementAPI.Controllers
 {
@@ -22,6 +20,7 @@ namespace InventoryManagementAPI.Controllers
             _mapper = mapper;
         }
 
+        // GET: api/Products
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductReadDTO>>> GetAllProducts()
         {
@@ -29,46 +28,57 @@ namespace InventoryManagementAPI.Controllers
             return Ok(_mapper.Map<IEnumerable<ProductReadDTO>>(products));
         }
 
+        // GET: api/Products/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProductReadDTO>> GetProductById(int id)
+        public async Task<ActionResult<ProductReadDTO>> GetProductById(string id)
         {
             var product = await _repository.GetProductByIdAsync(id);
             if (product == null) return NotFound();
             return Ok(_mapper.Map<ProductReadDTO>(product));
         }
 
+        // POST: api/Products
         [HttpPost]
         public async Task<ActionResult<ProductReadDTO>> CreateProduct(ProductCreateDTO productDto)
         {
             var product = _mapper.Map<Product>(productDto);
+            product.ProductId = Guid.NewGuid().ToString(); // Generate a new ID for DynamoDB
             await _repository.AddProductAsync(product);
             var productReadDto = _mapper.Map<ProductReadDTO>(product);
-            return CreatedAtAction(nameof(GetProductById), new { id = product.ProductID }, productReadDto);
+            return CreatedAtAction(nameof(GetProductById), new { id = product.ProductId }, productReadDto);
         }
 
+        // PUT: api/Products/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(int id, ProductUpdateDTO productDto)
+        public async Task<IActionResult> UpdateProduct(string id, ProductUpdateDTO productDto)
         {
             var product = _mapper.Map<Product>(productDto);
-            product.ProductID = id;
+            product.ProductId = id;
 
             await _repository.UpdateProductAsync(product);
             return NoContent();
         }
 
+        // PATCH: api/Products/{id}
         [HttpPatch("{id}")]
-        public async Task<IActionResult> UpdateProductPartial(int id, [FromBody] JsonPatchDocument<Product> patchDoc)
+        public async Task<IActionResult> UpdateProductPartial(string id, [FromBody] JsonPatchDocument<Product> patchDoc)
         {
-            await _repository.UpdateProductPartialAsync(id, patchDoc);
+            if (patchDoc == null) return BadRequest();
+
+            await _repository.UpdateProductPartialAsync(id, product =>
+            {
+                patchDoc.ApplyTo(product);
+            });
+
             return NoContent();
         }
 
+        // DELETE: api/Products/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
+        public async Task<IActionResult> DeleteProduct(string id)
         {
             await _repository.DeleteProductAsync(id);
             return NoContent();
         }
     }
-
 }

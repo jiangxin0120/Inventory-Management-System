@@ -38,10 +38,6 @@
       }
     }
   }
-  {
-    "ConnectionStrings": {
-      "DefaultConnection": "Server=YOUR_SERVER;Database=InventoryDB;Trusted_Connection=True;MultipleActiveResultSets=true"
-    }
   }
 
 }

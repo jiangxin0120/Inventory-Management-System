@@ -30,7 +30,7 @@ namespace InventoryManagementAPI.Controllers
 
         // GET: api/Categories/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<CategoryReadDTO>> GetCategoryById(int id)
+        public async Task<ActionResult<CategoryReadDTO>> GetCategoryById(string id)
         {
             var category = await _repository.GetCategoryByIdAsync(id);
             if (category == null) return NotFound();
@@ -42,6 +42,7 @@ namespace InventoryManagementAPI.Controllers
         public async Task<ActionResult<CategoryReadDTO>> CreateCategory(CategoryCreateDTO categoryDto)
         {
             var category = _mapper.Map<Category>(categoryDto);
+            category.CategoryID = Guid.NewGuid().ToString(); // Generate a new ID for DynamoDB
             await _repository.AddCategoryAsync(category);
             var categoryReadDto = _mapper.Map<CategoryReadDTO>(category);
             return CreatedAtAction(nameof(GetCategoryById), new { id = category.CategoryID }, categoryReadDto);
@@ -49,7 +50,7 @@ namespace InventoryManagementAPI.Controllers
 
         // PUT: api/Categories/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateCategory(int id, CategoryUpdateDTO categoryDto)
+        public async Task<IActionResult> UpdateCategory(string id, CategoryUpdateDTO categoryDto)
         {
             var category = _mapper.Map<Category>(categoryDto);
             category.CategoryID = id;
@@ -60,19 +61,24 @@ namespace InventoryManagementAPI.Controllers
 
         // PATCH: api/Categories/{id}
         [HttpPatch("{id}")]
-        public async Task<IActionResult> UpdateCategoryPartial(int id, [FromBody] JsonPatchDocument<Category> patchDoc)
+        public async Task<IActionResult> UpdateCategoryPartial(string id, [FromBody] JsonPatchDocument<Category> patchDoc)
         {
-            await _repository.UpdateCategoryPartialAsync(id, patchDoc);
+            if (patchDoc == null) return BadRequest();
+
+            await _repository.UpdateCategoryPartialAsync(id, category =>
+            {
+                patchDoc.ApplyTo(category);
+            });
+
             return NoContent();
         }
 
         // DELETE: api/Categories/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCategory(int id)
+        public async Task<IActionResult> DeleteCategory(string id)
         {
             await _repository.DeleteCategoryAsync(id);
             return NoContent();
         }
     }
-
 }
