@@ -3,7 +3,7 @@ using Amazon.DynamoDBv2.DataModel;
 using Amazon.Extensions.NETCore.Setup;
 using InventoryManagementAPI.Repository;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;  // Add Newtonsoft.Json namespace
+using Newtonsoft.Json; // Add Newtonsoft.Json namespace
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,8 +27,24 @@ builder.Services.AddControllers()
         options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
     });
 
+// Configure CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ListenAnyIP(80);
+});
 
 var app = builder.Build();
 
@@ -38,6 +54,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Enable CORS in middleware
+app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
