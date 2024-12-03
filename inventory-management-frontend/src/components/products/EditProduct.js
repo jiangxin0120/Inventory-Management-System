@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import api from '../../services/api';
 
-const ProductForm = () => {
+const EditProduct = () => {
   const { id } = useParams();
   const [formData, setFormData] = useState({
     Name: '',
@@ -13,9 +13,16 @@ const ProductForm = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (id) {
-      api.get(`/api/products/${id}`).then((response) => setFormData(response.data));
-    }
+    console.log("Editing product with ID:", id);
+    const fetchProduct = async () => {
+      try {
+        const response = await api.get(`/api/products/${id}`);
+        setFormData(response.data);
+      } catch (error) {
+        console.error("Error fetching product:", error);
+      }
+    };
+    fetchProduct();
   }, [id]);
 
   const handleChange = (e) => {
@@ -26,20 +33,16 @@ const ProductForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      if (id) {
-        await api.put(`/api/products/${id}`, formData);
-      } else {
-        await api.post('/api/products', formData);
-      }
+      await api.put(`/api/products/${id}`, formData);
       navigate('/products');
     } catch (err) {
-      console.error('Error saving product:', err);
+      console.error('Error updating product:', err);
     }
   };
 
   return (
     <div className="container mt-4">
-      <h2 className="text-2xl font-bold mb-4">{id ? 'Edit Product' : 'Create Product'}</h2>
+      <h2 className="text-2xl font-bold mb-4">Edit Product</h2>
       <form onSubmit={handleSubmit} className="bg-white p-4 rounded shadow-md">
         <div className="mb-3">
           <label className="form-label" htmlFor="Name">Product Name</label>
@@ -47,7 +50,6 @@ const ProductForm = () => {
             type="text"
             name="Name"
             id="Name"
-            placeholder="Product Name"
             value={formData.Name}
             onChange={handleChange}
             className="form-control"
@@ -60,7 +62,6 @@ const ProductForm = () => {
             type="text"
             name="CategoryId"
             id="CategoryId"
-            placeholder="Category ID"
             value={formData.CategoryId}
             onChange={handleChange}
             className="form-control"
@@ -73,7 +74,6 @@ const ProductForm = () => {
             type="number"
             name="QuantityInStock"
             id="QuantityInStock"
-            placeholder="Quantity in Stock"
             value={formData.QuantityInStock}
             onChange={handleChange}
             className="form-control"
@@ -86,7 +86,6 @@ const ProductForm = () => {
             type="number"
             name="Price"
             id="Price"
-            placeholder="Price"
             value={formData.Price}
             onChange={handleChange}
             step="0.01"
@@ -94,12 +93,10 @@ const ProductForm = () => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary">
-          {id ? 'Update' : 'Create'}
-        </button>
+        <button type="submit" className="btn btn-primary">Update</button>
       </form>
     </div>
   );
 };
 
-export default ProductForm;
+export default EditProduct; 

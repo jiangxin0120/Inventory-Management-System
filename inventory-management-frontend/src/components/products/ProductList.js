@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await api.get('api/products');
+        const response = await api.get('/api/products');
         setProducts(response.data);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -17,12 +19,14 @@ const ProductList = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
-      <h1 className="text-3xl font-bold mb-6">Product List</h1>
-      <ul className="bg-white rounded shadow-md w-full max-w-md">
+    <div className="container mt-4">
+      <h1 className="text-2xl font-bold mb-4">Product List</h1>
+      <button onClick={() => navigate('/dashboard')} className="btn btn-secondary mb-3">Back to Dashboard</button>
+      <ul className="list-group">
         {products.map((product) => (
-          <li key={product.ProductId} className="border-b border-gray-200 p-4 hover:bg-gray-100">
-            {product.Name} - {product.CategoryId} - ${product.Price} - Stock: {product.QuantityInStock}
+          <li key={product.id} className="list-group-item d-flex justify-content-between align-items-center">
+            {product.Name}
+            <Link to={`/products/edit/${product.id}`} className="btn btn-warning btn-sm">Edit</Link>
           </li>
         ))}
       </ul>
