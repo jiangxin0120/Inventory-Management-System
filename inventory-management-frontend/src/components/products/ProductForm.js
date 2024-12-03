@@ -15,7 +15,7 @@ const ProductForm = () => {
   useEffect(() => {
     if (id) {
       // Fetch product data for editing
-      api.get(`/products/${id}`).then((response) => setFormData(response.data));
+      api.get(`/api/products/${id}`).then((response) => setFormData(response.data));
     }
   }, [id]);
 
@@ -28,9 +28,9 @@ const ProductForm = () => {
     e.preventDefault();
     try {
       if (id) {
-        await api.put(`/products/${id}`, formData); // Update existing product
+        await api.put(`/api/products/${id}`, formData); // Update existing product
       } else {
-        await api.post('/products', formData); // Create new product
+        await api.post('/api/products', formData); // Create new product
       }
       navigate('/products');
     } catch (err) {

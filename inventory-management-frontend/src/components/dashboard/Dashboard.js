@@ -1,7 +1,11 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import api from '../../services/api';
 
 const Dashboard = () => {
+  const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [users, setUsers] = useState([]);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -9,17 +13,70 @@ const Dashboard = () => {
     navigate('/');
   };
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const productsResponse = await api.get('/api/products');
+        const categoriesResponse = await api.get('/api/categories');
+        const usersResponse = await api.get('/api/users');
+
+        setProducts(productsResponse.data);
+        setCategories(categoriesResponse.data);
+        setUsers(usersResponse.data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
-      <h1 className="text-3xl font-bold mb-6">Dashboard</h1>
-      <nav className="mb-4">
-        <Link to="/products" className="text-blue-500 hover:underline">Products</Link> | 
-        <Link to="/categories" className="text-blue-500 hover:underline">Categories</Link> | 
-        <Link to="/users" className="text-blue-500 hover:underline">Users</Link>
-      </nav>
+    <div className="container mt-4">
+      <h1 className="text-center mb-4">Dashboard</h1>
+
+      <div className="mb-4">
+        <h2>Products</h2>
+        <button onClick={() => navigate('/products/new')} className="btn btn-success mb-2">Add Product</button>
+        <ul className="list-group">
+          {products.map(product => (
+            <li key={product.id} className="list-group-item d-flex justify-content-between align-items-center">
+              {product.Name}
+              <button onClick={() => navigate(`/products/edit/${product.id}`)} className="btn btn-warning btn-sm">Edit</button>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="mb-4">
+        <h2>Categories</h2>
+        <button onClick={() => navigate('/categories/new')} className="btn btn-success mb-2">Add Category</button>
+        <ul className="list-group">
+          {categories.map(category => (
+            <li key={category.id} className="list-group-item d-flex justify-content-between align-items-center">
+              {category.CategoryName}
+              <button onClick={() => navigate(`/categories/edit/${category.id}`)} className="btn btn-warning btn-sm">Edit</button>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="mb-4">
+        <h2>Users</h2>
+        <button onClick={() => navigate('/users/new')} className="btn btn-success mb-2">Add User</button>
+        <ul className="list-group">
+          {users.map(user => (
+            <li key={user.id} className="list-group-item d-flex justify-content-between align-items-center">
+              {user.Username}
+              <button onClick={() => navigate(`/users/edit/${user.id}`)} className="btn btn-warning btn-sm">Edit</button>
+            </li>
+          ))}
+        </ul>
+      </div>
+
       <button 
         onClick={handleLogout} 
-        className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+        className="btn btn-danger"
       >
         Logout
       </button>

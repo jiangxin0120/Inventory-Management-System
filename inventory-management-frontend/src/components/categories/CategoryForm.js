@@ -13,7 +13,7 @@ const CategoryForm = () => {
   useEffect(() => {
     if (id) {
       // Fetch category data for editing
-      api.get(`/categories/${id}`).then((response) => setFormData(response.data));
+      api.get(`/api/categories/${id}`).then((response) => setFormData(response.data));
     }
   }, [id]);
 
@@ -26,9 +26,9 @@ const CategoryForm = () => {
     e.preventDefault();
     try {
       if (id) {
-        await api.put(`/categories/${id}`, formData); // Update existing category
+        await api.put(`/api/categories/${id}`, formData); // Update existing category
       } else {
-        await api.post('/categories', formData); // Create new category
+        await api.post('/api/categories', formData); // Create new category
       }
       navigate('/categories');
     } catch (err) {

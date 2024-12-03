@@ -10,7 +10,7 @@ const UserForm = () => {
   useEffect(() => {
     if (id) {
       // Fetch user data for editing
-      api.get(`/users/${id}`).then((response) => setFormData(response.data));
+      api.get(`/api/users/${id}`).then((response) => setFormData(response.data));
     }
   }, [id]);
 
@@ -23,9 +23,9 @@ const UserForm = () => {
     e.preventDefault();
     try {
       if (id) {
-        await api.put(`/users/${id}`, formData); // Update existing user
+        await api.put(`/api/users/${id}`, formData); // Update existing user
       } else {
-        await api.post('/users', formData); // Create new user
+        await api.post('/api/users', formData); // Create new user
       }
       navigate('/users');
     } catch (err) {
