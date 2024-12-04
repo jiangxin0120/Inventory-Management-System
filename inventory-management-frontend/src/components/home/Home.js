@@ -7,10 +7,14 @@ const Home = () => {
       <h1 className="text-3xl font-bold mb-6">Welcome to the Inventory Management System</h1>
       <div className="space-x-4">
         <Link to="/login">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Login</button>
+          <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-200">
+            Login
+          </button>
         </Link>
         <Link to="/register">
-          <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Register</button>
+          <button className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition duration-200">
+            Register
+          </button>
         </Link>
       </div>
     </div>

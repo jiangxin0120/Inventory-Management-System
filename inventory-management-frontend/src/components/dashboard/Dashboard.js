@@ -94,7 +94,12 @@ const Dashboard = () => {
 
       <div className="mb-4">
         <h2>Products</h2>
-        <button onClick={() => navigate('/products/new')} className="btn btn-success mb-2">Add Product</button>
+        <button 
+          onClick={() => navigate('/products/new')} 
+          className="btn btn-success mb-2"
+        >
+          Add Product
+        </button>
         <ul className="list-group">
           {products.map(product => (
             <li key={product.ProductId} className="list-group-item d-flex justify-content-between align-items-center">
@@ -110,39 +115,36 @@ const Dashboard = () => {
 
       <div className="mb-4">
         <h2>Categories</h2>
-        <button onClick={() => navigate('/categories/new')} className="btn btn-success mb-2">Add Category</button>
+        <button 
+          onClick={() => navigate('/categories/new')} 
+          className="btn btn-success mb-2"
+        >
+          Add Category
+        </button>
         <ul className="list-group">
-          {categories.map(category => {
-            console.log('Rendering category:', category); // Debug log
-            return (
-              <li key={category.CategoryId} className="list-group-item d-flex justify-content-between align-items-center">
-                <div>
-                  <span className="fw-bold">{category.CategoryName}</span>
-                  {category.Description && <p className="text-muted mb-0 small">{category.Description}</p>}
-                </div>
-                <div>
-                  <button 
-                    onClick={() => handleEditCategory(category.CategoryId)} 
-                    className="btn btn-warning btn-sm me-2"
-                  >
-                    Edit
-                  </button>
-                  <button 
-                    onClick={() => handleDeleteCategory(category.CategoryId)} 
-                    className="btn btn-danger btn-sm"
-                  >
-                    Delete
-                  </button>
-                </div>
-              </li>
-            );
-          })}
+          {categories.map(category => (
+            <li key={category.CategoryId} className="list-group-item d-flex justify-content-between align-items-center">
+              <div>
+                <span className="fw-bold">{category.CategoryName}</span>
+                {category.Description && <p className="text-muted mb-0 small">{category.Description}</p>}
+              </div>
+              <div>
+                <button onClick={() => handleEditCategory(category.CategoryId)} className="btn btn-warning btn-sm me-2">Edit</button>
+                <button onClick={() => handleDeleteCategory(category.CategoryId)} className="btn btn-danger btn-sm">Delete</button>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
 
       <div className="mb-4">
         <h2>Users</h2>
-        <button onClick={() => navigate('/users/new')} className="btn btn-success mb-2">Add User</button>
+        <button 
+          onClick={() => navigate('/users/new')} 
+          className="btn btn-success mb-2"
+        >
+          Add User
+        </button>
         <ul className="list-group">
           {users.map(user => (
             <li key={user.UserId} className="list-group-item d-flex justify-content-between align-items-center">
