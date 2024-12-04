@@ -42,7 +42,7 @@ namespace InventoryManagementAPI.Controllers
         public async Task<ActionResult<ProductReadDTO>> CreateProduct(ProductCreateDTO productDto)
         {
             var product = _mapper.Map<Product>(productDto);
-            product.ProductId = Guid.NewGuid().ToString(); // Generate a new ID for DynamoDB
+            product.ProductId = Guid.NewGuid().ToString(); 
             await _repository.AddProductAsync(product);
             var productReadDto = _mapper.Map<ProductReadDTO>(product);
             return CreatedAtAction(nameof(GetProductById), new { id = product.ProductId }, productReadDto);

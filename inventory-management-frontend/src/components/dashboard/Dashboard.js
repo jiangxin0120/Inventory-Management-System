@@ -49,10 +49,18 @@ const Dashboard = () => {
   const handleDeleteCategory = async (id) => {
     if (window.confirm("Are you sure you want to delete this category?")) {
       try {
+        console.log('Deleting category with ID:', id);
         await api.delete(`/api/categories/${id}`);
-        setCategories(categories.filter(category => category.CategoryId !== id));
+        
+        // Update the categories state by filtering out the deleted category
+        setCategories(prevCategories => 
+          prevCategories.filter(category => category.Id === id || category.CategoryId === id)
+        );
+        
+        console.log('Category deleted successfully');
       } catch (error) {
         console.error('Error deleting category:', error);
+        alert('Failed to delete category. Please try again.');
       }
     }
   };
@@ -122,18 +130,32 @@ const Dashboard = () => {
           Add Category
         </button>
         <ul className="list-group">
-          {categories.map(category => (
-            <li key={category.CategoryId} className="list-group-item d-flex justify-content-between align-items-center">
-              <div>
-                <span className="fw-bold">{category.CategoryName}</span>
-                {category.Description && <p className="text-muted mb-0 small">{category.Description}</p>}
-              </div>
-              <div>
-                <button onClick={() => handleEditCategory(category.CategoryId)} className="btn btn-warning btn-sm me-2">Edit</button>
-                <button onClick={() => handleDeleteCategory(category.CategoryId)} className="btn btn-danger btn-sm">Delete</button>
-              </div>
-            </li>
-          ))}
+          {categories.map(category => {
+            const categoryId = category.Id || category.CategoryId;
+            console.log('Category in map:', category); // Debug log
+            return (
+              <li key={categoryId} className="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <span className="fw-bold">{category.CategoryName}</span>
+                  {category.Description && <p className="text-muted mb-0 small">{category.Description}</p>}
+                </div>
+                <div>
+                  <button 
+                    onClick={() => handleEditCategory(categoryId)} 
+                    className="btn btn-warning btn-sm me-2"
+                  >
+                    Edit
+                  </button>
+                  <button 
+                    onClick={() => handleDeleteCategory(categoryId)} 
+                    className="btn btn-danger btn-sm"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </div>
 

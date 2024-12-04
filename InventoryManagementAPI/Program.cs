@@ -3,7 +3,7 @@ using Amazon.DynamoDBv2.DataModel;
 using Amazon.Extensions.NETCore.Setup;
 using InventoryManagementAPI.Repository;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json; // Add Newtonsoft.Json namespace
+using Newtonsoft.Json; 
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -20,11 +20,15 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await api.post('/users', formData); 
+      console.log('Submitting registration data:', formData);
+      const response = await api.post('/api/users', formData); 
+      console.log('Registration response:', response);
+      
       setSuccess('Registration successful! Redirecting to login...');
-      setTimeout(() => navigate('/'), 2000);
+      setTimeout(() => navigate('/login'), 2000);
     } catch (err) {
-      setError('Failed to register');
+      console.error('Registration error:', err);
+      setError('Failed to register. Please try again.');
     }
   };
 

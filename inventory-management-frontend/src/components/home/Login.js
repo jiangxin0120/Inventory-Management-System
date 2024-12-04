@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import api from '../../services/api';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -16,11 +17,20 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.Username && formData.Password) {
-      localStorage.setItem('token', 'dummy-token');
-      navigate('/dashboard');
-    } else {
-      setError('Please enter both username and password');
+    try {
+      console.log('Submitting login data:', formData);
+      const response = await api.post('/api/users', formData);
+      console.log('Login response:', response);
+
+      if (response.data.token) {
+        localStorage.setItem('token', response.data.token);
+        navigate('/dashboard');
+      } else {
+        setError('Invalid login response');
+      }
+    } catch (err) {
+      console.error('Login error:', err);
+      setError('Invalid username or password');
     }
   };
 

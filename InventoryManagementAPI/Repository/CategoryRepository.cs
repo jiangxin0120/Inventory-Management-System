@@ -44,8 +44,8 @@ namespace InventoryManagementAPI.Repository
             var category = await _context.LoadAsync<Category>(id);
             if (category != null)
             {
-                updateAction(category); // Apply updates
-                await _context.SaveAsync(category); // Save changes
+                updateAction(category); 
+                await _context.SaveAsync(category);
             }
         }
 

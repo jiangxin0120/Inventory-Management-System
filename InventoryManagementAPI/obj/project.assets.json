@@ -5516,11 +5516,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\timez\\OneDrive\\桌面\\COMP306Group Project\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
+      "projectUniqueName": "C:\\Users\\timez\\OneDrive\\桌面\\COMP306Group_Project\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
       "projectName": "InventoryManagementAPI",
-      "projectPath": "C:\\Users\\timez\\OneDrive\\桌面\\COMP306Group Project\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
+      "projectPath": "C:\\Users\\timez\\OneDrive\\桌面\\COMP306Group_Project\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
       "packagesPath": "C:\\Users\\timez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\timez\\OneDrive\\桌面\\COMP306Group Project\\InventoryManagementAPI\\obj\\",
+      "outputPath": "C:\\Users\\timez\\OneDrive\\桌面\\COMP306Group_Project\\InventoryManagementAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

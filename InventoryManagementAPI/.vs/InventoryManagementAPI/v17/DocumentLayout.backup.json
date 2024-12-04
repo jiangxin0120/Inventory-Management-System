@@ -1,113 +1,113 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\inventorymanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\inventorymanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:inventorymanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\dtos\\productreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\dtos\\productreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:dtos\\productreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\dtos\\categoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\dtos\\categoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:dtos\\categoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\dtos\\categoryreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\dtos\\categoryreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:dtos\\categoryreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\dtos\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\dtos\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:dtos\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group project\\inventorymanagementapi\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|c:\\users\\timez\\onedrive\\\u684C\u9762\\comp306group_project\\inventorymanagementapi\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4944468E-D674-43ED-A678-A031F287C32A}|InventoryManagementAPI.csproj|solutionrelative:repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -118,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,39 +126,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-28T16:35:01.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T16:35:01.741Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Dockerfile",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Dockerfile",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Dockerfile",
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-28T04:14:19.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T04:14:19.475Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAB8AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T07:39:31.616Z",
               "EditorCaption": ""
@@ -167,9 +165,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "UserUpdateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\UserUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\UserUpdateDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\UserUpdateDTO.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\UserUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\UserUpdateDTO.cs",
               "RelativeToolTip": "DTOs\\UserUpdateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -179,9 +177,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "UserReadDTO.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\UserReadDTO.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\UserReadDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\UserReadDTO.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\UserReadDTO.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\UserReadDTO.cs",
               "RelativeToolTip": "DTOs\\UserReadDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -191,9 +189,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ProductReadDTO.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\ProductReadDTO.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\ProductReadDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\ProductReadDTO.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\ProductReadDTO.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\ProductReadDTO.cs",
               "RelativeToolTip": "DTOs\\ProductReadDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -203,9 +201,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repository\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\UserRepository.cs",
               "RelativeToolTip": "Repository\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -215,11 +213,11 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-25T07:43:59.394Z"
             },
@@ -227,11 +225,11 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "InventoryManagementAPI.csproj",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
               "RelativeDocumentMoniker": "InventoryManagementAPI.csproj",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
               "RelativeToolTip": "InventoryManagementAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-27T17:06:33.922Z"
             },
@@ -239,9 +237,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "UserCreateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\UserCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\UserCreateDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\UserCreateDTO.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\UserCreateDTO.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\UserCreateDTO.cs",
               "RelativeToolTip": "DTOs\\UserCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -251,9 +249,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ProductUpdateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\ProductUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\ProductUpdateDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\ProductUpdateDTO.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\ProductUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\ProductUpdateDTO.cs",
               "RelativeToolTip": "DTOs\\ProductUpdateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -263,9 +261,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAADwv1gAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -275,9 +273,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Models\\Category.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Models\\Category.cs",
               "RelativeToolTip": "Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -287,9 +285,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -299,9 +297,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Models\\Product.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -311,9 +309,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Repository\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\IUserRepository.cs",
               "RelativeToolTip": "Repository\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -323,9 +321,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\MappingProfile.cs",
               "RelativeDocumentMoniker": "MappingProfile.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\MappingProfile.cs",
               "RelativeToolTip": "MappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -335,11 +333,11 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\ProductRepository.cs",
               "RelativeDocumentMoniker": "Repository\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\ProductRepository.cs",
               "RelativeToolTip": "Repository\\ProductRepository.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAIBJwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T07:47:13.113Z"
             },
@@ -347,9 +345,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\IProductRepository.cs",
               "RelativeDocumentMoniker": "Repository\\IProductRepository.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\IProductRepository.cs",
               "RelativeToolTip": "Repository\\IProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -359,9 +357,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "ProductCreateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\ProductCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\ProductCreateDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\ProductCreateDTO.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\ProductCreateDTO.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\ProductCreateDTO.cs",
               "RelativeToolTip": "DTOs\\ProductCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -371,9 +369,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Controllers\\ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Controllers\\ProductsController.cs",
               "ViewState": "AgIAACoAAAAAAAAAAADwvz8AAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -383,9 +381,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "CategoryReadDTO.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\CategoryReadDTO.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\CategoryReadDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\CategoryReadDTO.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\CategoryReadDTO.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\CategoryReadDTO.cs",
               "RelativeToolTip": "DTOs\\CategoryReadDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -395,9 +393,9 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "CategoryCreateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\CategoryCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\CategoryCreateDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\CategoryCreateDTO.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\CategoryCreateDTO.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\CategoryCreateDTO.cs",
               "RelativeToolTip": "DTOs\\CategoryCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -407,9 +405,9 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Controllers\\CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Controllers\\CategoriesController.cs",
               "ViewState": "AgIAACoAAAAAAAAAAADwv1QAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -419,9 +417,9 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "CategoryUpdateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\CategoryUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\CategoryUpdateDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\CategoryUpdateDTO.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\DTOs\\CategoryUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\DTOs\\CategoryUpdateDTO.cs",
               "RelativeToolTip": "DTOs\\CategoryUpdateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -431,9 +429,9 @@
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "Repository\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\ICategoryRepository.cs",
               "RelativeToolTip": "Repository\\ICategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -443,9 +441,9 @@
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "Repository\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group Project\\InventoryManagementAPI\\Repository\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\timez\\OneDrive\\\u684C\u9762\\COMP306Group_Project\\InventoryManagementAPI\\Repository\\CategoryRepository.cs",
               "RelativeToolTip": "Repository\\CategoryRepository.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAwwDYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

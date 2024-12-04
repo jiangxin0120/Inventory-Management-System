@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EGKIe2dM3PI=",
+  "dgSpecHash": "w13OtqrVp6I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\timez\\OneDrive\\桌面\\COMP306Group Project\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
+  "projectFilePath": "C:\\Users\\timez\\OneDrive\\桌面\\COMP306Group_Project\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\timez\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\timez\\.nuget\\packages\\awssdk.core\\3.7.400.57\\awssdk.core.3.7.400.57.nupkg.sha512",
